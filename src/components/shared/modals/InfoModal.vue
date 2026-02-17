@@ -15,8 +15,10 @@
 </template>
 
 <script>
-//import { versions } from '@/changelog'
-//import Modal from './components/shared/Modal.vue'
+import { versions } from '@/changelog'
+import { shell } from 'electron'
+import Modal from '@/components/shared/Modal'
+const appVersion = require('electron').remote.app.getVersion()
 // const browserWindow = remote.getCurrentWindow()
 
 export default {
@@ -38,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./style/_colors.scss";
+@import "@/style/_colors.scss";
 
 h3 {
   margin-top: 32px;

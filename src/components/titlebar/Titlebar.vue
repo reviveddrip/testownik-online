@@ -30,10 +30,10 @@
 </template>
 
 <script>
-//import { remote } from 'electron'
-//import WindowsControls from './controls/WindowsControls'
-//import ArcControls from './controls/ArcControls'
-//import OSXControls from './controls/OSXControls'
+import { remote } from 'electron'
+import WindowsControls from './controls/WindowsControls'
+import ArcControls from './controls/ArcControls'
+import OSXControls from './controls/OSXControls'
 const browserWindow = remote.getCurrentWindow()
 
 export default {

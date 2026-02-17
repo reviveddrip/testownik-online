@@ -89,9 +89,9 @@
 </template>
 
 <script>
-//import Modal from './src/components/shared/Modal.vue'
-//import VSelect from './src/components/shared/v-select.vue'
-//import { controlThemes } from './src/constants.js'
+import Modal from '@/components/shared/Modal'
+import VSelect from '@/components/shared/v-select'
+import { controlThemes } from '@/constants.js'
 
 export default {
   components: {
@@ -154,7 +154,7 @@ export default {
 </script>
 
 <style lang="scss">
-//@import "./style/_colors.scss";
+@import "@/style/_colors.scss";
 
 .section {
   margin: 24px 0;
